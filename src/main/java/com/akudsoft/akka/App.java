@@ -10,6 +10,7 @@ import scala.concurrent.duration.Duration;
 
 public class App {
     public static final String PING_ACTOR = "ping-actor";
+    public static final String CLUSTER_LISTENER = "cluster-lsnr";
     public static final String SYSTEM_NAME = "akka";
     public static final Timeout DEFAULT_TIMEOUT = new Timeout(Duration.create(5, "seconds"));
 

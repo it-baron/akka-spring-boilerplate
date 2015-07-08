@@ -16,3 +16,16 @@ curl localhost:8181/ping
 ```sh
 service.sh
 ```
+
+## Create seed node
+
+```
+-Dakka.remote.netty.tcp.port=2551
+```
+
+## Joining seed nodes
+
+```
+-Dakka.cluster.seed-nodes.0=akka.tcp://akka@host1:2551
+-Dakka.cluster.seed-nodes.1=akka.tcp://akka@host2:2552
+```
